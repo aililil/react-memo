@@ -1,0 +1,11 @@
+.date-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33.3rem;
+  outline: 0.125rem solid #4E6EF2;
+}
+.date-box > .title {
+  width: 3.75rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}

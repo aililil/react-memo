@@ -1,0 +1,30 @@
+.calend-item {
+  position: relative;
+  border-radius: 0.4rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+.calend-item:hover{
+  outline: 0.125rem solid #4E6EF2;
+}
+.sign {
+  display: none;
+  position: absolute;
+  left: 0.1rem;
+  top: 0.1rem;
+}
+.num-date {
+  margin-top: 0.25rem;
+  font-size: 1.4rem;
+}
+.off-day > .num-date {
+  color: red;
+}
+.sabbatical {
+  background-color: #bbb;
+}
+.sabbatical > .sign {
+  display: inline;
+}

@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+}
+.text {
+  position: relative;
+  cursor: pointer;
+  border: 0.125rem solid #ddd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  min-width: 4rem;
+}
+.text:hover {
+  background-color: #eee;
+}
+.text-after > p::after {
+  content: '\25B4';
+  display: inline-block;
+  transform-origin: 50% 55%;
+  transform: rotate(180deg);
+}
+.picker {
+  width: 4rem;
+  background-color: #fff;
+  list-style-type: none;
+  position: absolute;
+  left: 0.4rem;
+  top: 2rem;
+  max-height: 8rem;
+  overflow: hidden auto;
+  z-index: 1;
+  text-align: center;
+  box-shadow: 1px 1px 5px #ccc;
+}
+.picker::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.picker::-webkit-scrollbar-thumb {
+  border-radius: 0.1rem;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #eee;
+}
+.picker > li {
+  height: 1.5rem;
+  background-color: white;
+}
+.picker > li:hover {
+  background-color: #eee;
+}
+.pointer {
+  cursor: pointer;
+  font-size: 2.4rem;
+  line-height: 1.6rem;
+  transform: scale(0.6, 1);
+}

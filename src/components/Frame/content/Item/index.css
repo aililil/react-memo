@@ -1,0 +1,31 @@
+.item {
+  padding: 4px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.item:hover {
+  background-color: #f7f7f7;
+}
+.check-box {
+  vertical-align: middle;
+}
+.item > p {
+  height: 30px;
+  line-height: 30px;
+}
+.item:hover > .item-btn {
+  display: inline;
+}
+.item-btn {
+  display: none;
+}
+.item::after {
+  width: 90%;
+  border-bottom: 1px solid #ebedf0;
+  content: ' ';
+  bottom: 0;
+  left: 5%;
+  position: absolute;
+}
